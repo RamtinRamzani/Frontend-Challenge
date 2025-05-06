@@ -1,17 +1,18 @@
 import { Outlet } from "react-router-dom";
-import Header from "../header";
-import Footer from "../footer";
+import Sidebar from "../sideBar";
+import { useState } from "react";
 
 const AppLayOut = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
-    <div>
-      <Header />
+    <div className="flex md:h-screen bg-gray-900">
+      <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
-      <main>
+      <main
+        className={`flex-1 h-full ${isSidebarOpen ? "md:ml-64 transition-all" : ""}`}
+      >
         <Outlet />
       </main>
-
-      <Footer />
     </div>
   );
 };
