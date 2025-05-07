@@ -1,7 +1,7 @@
 const BaseApparel = () => {
   return (
-    <div className="container flex max-md:flex-col-reverse justify- mx-auto gap-[clamp(1rem,4vw,4rem)] h-full bg-gray-100">
-      <div className="flex flex-col md:pl-20 md:w-1/2 px-4">
+    <div className="flex max-md:flex-col-reverse mx-auto gap-[clamp(1rem,8vw,12rem)] h-full bg-gray-100">
+      <div className="flex flex-col md:pl-20 md:w-1/2 lg:w-3/5 px-4">
         <div className="mt-10 max-md:hidden">
           <img src="/images/nowb/logo.svg" alt="base apparel" />
         </div>
@@ -10,7 +10,7 @@ const BaseApparel = () => {
           <span className="text-gray-800">coming</span>
           <span className="text-gray-800">soon.</span>
         </h2>
-        <p className="md:mt-16 mt-8 max-md:text-center text-gray-400 tracking-wider font-[Josefin]">
+        <p className="md:mt-16 mt-8 p-2 max-md:text-center text-gray-400 tracking-wider font-[Josefin line-clamp-4 overflow-hidden">
           hello flow shappers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
@@ -26,7 +26,7 @@ const BaseApparel = () => {
           </button>
         </div>
       </div>
-      <div className="md:w-1/2 h-full">
+      <div className="md:w-1/2 lg:w-2/5 h-full">
         <div className="mt-20 mx-2 mb-6 w-1/3 md:hidden">
           <img src="/images/nowb/logo.svg" alt="base apparel" />
         </div>
