@@ -15,7 +15,6 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   const nowb = [
     { name: "Base Apparel", path: "/nowb/base-apparel" },
     { name: "FAQ Accordion", path: "/nowb/faq-accordion" },
-    { name: "Social Links", path: "/nowb/social-links" },
   ];
 
   // Animation variants for the sidebar
