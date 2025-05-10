@@ -33,7 +33,7 @@ const BaseApparel = () => {
         <img
           src="/images/nowb/hero-desktop.jpg"
           alt="Photo"
-          className="w-full md:h-full max-sm:h-72 max-md:h-96"
+          className="w-full md:h-full max-sm:h-96 max-md:h-96"
         />
       </div>
     </div>

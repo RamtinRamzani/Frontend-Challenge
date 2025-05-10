@@ -5,7 +5,7 @@ import { useState } from "react";
 const AppLayOut = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
-    <div className="flex md:h-screen bg-gray-900">
+    <div className="flex md:h-screen bg-gray-200">
       <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
       <main
